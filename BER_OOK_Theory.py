@@ -15,14 +15,14 @@ rad   = 1e-6;           # receiver radius in m
 # transmission parameters
 N     = 5e3             # number of release particles for bit-1
 T     = 5e-1            # symbol duration in s
-Ts    = 0.15            # sampling time in s
+Ts    = dist * dist /6 / diffc # sampling time in s
 K     = 1e2             # number of bits
 # detection threshold values
 thre  = np.arange(0, N+1)
 # numerical calculation parameters
-L     = 12              # considered channel memory length
+L     = 10              # considered channel memory length
 met   = 'Gaussian'      # method for BER calculation ['Gaussian' or 'Poisson' (default)]
-fname = 'BER_Num_OOK'   # name of result file
+fname = 'THE_OOK_N5000'   # name of result file
 
 #* observation probabilities
 t = np.arange(Ts, K*T+Ts, T)

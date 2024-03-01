@@ -1,4 +1,5 @@
 # PBS BER calculation of OOK DBMC transmission, using spherical transparent receiver with single sample and fixed threshold
+#! imports results from MolCom_PBS simulator https://github.com/martindamrath/MolCom_PBS
 
 import pandas as pd
 import numpy as np

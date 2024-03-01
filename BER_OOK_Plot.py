@@ -15,7 +15,6 @@ BER_PBS = data['BER'].flatten()
 data = loadmat(fname_THE)
 BER_THE = data['BER'].flatten()
 
-print(BER_PBS)
 #* plotting
 fig, ax = plt.subplots()
 ax.loglog(threshold, BER_PBS, BER_THE)
@@ -24,6 +23,3 @@ ax.set_ylabel('BER')
 ax.grid()
 ax.legend(['PBS', 'NUM'])
 plt.show()    
-
-#* saving
-#savemat(fname+'.mat', {'threshold': thre, 'BER': BER})
